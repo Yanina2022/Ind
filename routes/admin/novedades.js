@@ -31,13 +31,14 @@ router.get('/', async function (req, res, next) {
     res.render('index', {
         novedades
     });
-});
+
 
 res.render('admin/novedades', {
     layout: 'admin/layout',
     usuario: req.session.nombre,
     novedades
 });
+ });   
 
 
 /*para eliminar una novedad*/
